@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ABC Laboratory Report</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #eef5f7;
+    color: #17202a;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.header {
+    background: #0b7285;
+    color: white;
+    padding: 22px;
+    border-radius: 15px 15px 0 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header p {
+    margin: 6px 0 0;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-top: 12px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.patient {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.label {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+.value {
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #e7f5f8;
+}
+
+.know {
+    border-left: 5px solid #0b7285;
+}
+
+.warning {
+    background: #fff3cd;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.footer {
+    text-align: center;
+    color: #6c757d;
+    font-size: 12px;
+    margin: 20px 0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>🧪 ABC Laboratory</h1>
+        <p>Laboratory Investigation Report</p>
+    </div>
+
+    <div class="card">
+        <h2>👤 Patient Information</h2>
+
+        <div class="patient">
+            <div>
+                <div class="label">Patient Name</div>
+                <div class="value">Demo Patient</div>
+            </div>
+
+            <div>
+                <div class="label">Report ID</div>
+                <div class="value">LAB001</div>
+            </div>
+
+            <div>
+                <div class="label">Test</div>
+                <div class="value">Complete Blood Count</div>
+            </div>
+
+            <div>
+                <div class="label">Status</div>
+                <div class="value">✓ Verified</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🔬 Test Results</h2>
+
+        <table>
+            <tr>
+                <th>Parameter</th>
+                <th>Result</th>
+            </tr>
+
+            <tr>
+                <td>Hemoglobin</td>
+                <td>13.8 g/dL</td>
+            </tr>
+
+            <tr>
+                <td>WBC</td>
+                <td>7,200 /µL</td>
+            </tr>
+
+            <tr>
+                <td>Platelets</td>
+                <td>2.5 lakh/µL</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card know">
+        <h2>💡 Know Your Test</h2>
+
+        <p>
+            <b>What is CBC?</b><br>
+            Complete Blood Count (CBC) is a blood test that measures
+            important components of blood such as red blood cells,
+            white blood cells and platelets.
+        </p>
+
+        <p>
+            <b>Why is it done?</b><br>
+            It can help healthcare professionals assess different
+            conditions and understand a patient's general blood status.
+        </p>
+
+        <div class="warning">
+            ⚠️ This information is for understanding the laboratory
+            test only. Test results should be interpreted by a qualified
+            healthcare professional.
+        </div>
+    </div>
+
+    <div class="footer">
+        Digital Laboratory Report • Know Your Test QR System
+    </div>
+
+</div>
+
+</body>
+</html>
